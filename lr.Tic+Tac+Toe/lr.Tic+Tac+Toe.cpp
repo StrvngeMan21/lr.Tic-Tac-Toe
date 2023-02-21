@@ -1,7 +1,7 @@
-﻿#include <iostream>
+﻿#include "Classes/stdafx.h"
 
 int main()
 {
-    std::cout << "\t-\t1\t2\t3\t[-]\n\t[-]\t1";
+    std::cout << "";
     return 0;
 }
