@@ -1,5 +1,7 @@
 #pragma once
 #include "stdafx.h"
+#include "Debug.h"
+#include "Objects.h"
 
 enum class eTurn
 {
@@ -7,7 +9,7 @@ enum class eTurn
 	X_TURN
 };
 
-class Tabletop
+class Tabletop : public Debug
 {
 	friend class Control;
 	friend class Render;
@@ -16,10 +18,10 @@ private:
 	static const short m_ySize = 3;
 	short m_step = 0;
 
+	static std::array<std::array<std::shared_ptr<Objects>, m_xSize>, m_xSize> m_table;
+
 	static void getTurn();
 	static void setObjRandomly();
-
-	void sendDebugMes();
 
 	class Impl;
 	std::unique_ptr<Impl> d_;

@@ -5,11 +5,22 @@ class Debug
 {
 private:
 	template <class T>
-	std::string debugMes() override;
+	const char* getClass() const;
+
+public:
+	template <class T>
+	void printDebugMes();
 };
 
 template<class T>
-inline std::string Debug::debugMes()
+inline const char* Debug::getClass() const
 {
-	return (typeid(T).name() + "online!");
+	const char* className = typeid(T&).name();
+	return className;
+}
+
+template<class T>
+void Debug::printDebugMes()
+{
+	std::cout << Debug::getClass<T>() << " Online!" << std::endl;
 }

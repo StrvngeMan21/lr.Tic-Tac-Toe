@@ -1,5 +1,6 @@
 #pragma once
 #include "stdafx.h"
+#include "Debug.h"
 
 enum class eControls
 {
@@ -11,13 +12,10 @@ enum class eControls
 	EXIT	= 'e' | 'E' | 'ó' | 'Ó'
 };
 
-class Controls
+class Controls : public Debug
 {
 	friend class Tabletop;
 private:
-
-	void sendDebugMes();
-
 	class Impl;
 	std::unique_ptr<Impl> d_;
 public:

@@ -1,15 +1,14 @@
 #pragma once
 #include "stdafx.h"
+#include "Debug.h"
 
-class Objects
+class Objects : public Debug
 {
 private:
 	char m_objChar = '/';
 	short m_x = 0;
 	short m_y = 0;
 	bool m_selected = false;
-
-	void sendDebugMes();
 
 	class Impl;
 	std::unique_ptr<Impl> d_;

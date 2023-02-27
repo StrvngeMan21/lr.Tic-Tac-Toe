@@ -1,1 +1,11 @@
-﻿  lr.Tic+Tac+Toe.vcxproj -> C:\Users\merzlikin.ai1667\Source\Repos\StrvngeMan21\lr.Tic-Tac-Toe\x64\Debug\lr.Tic+Tac+Toe.exe
+﻿  ControlsIImpl.cpp
+  ObjectsImpl.cpp
+  TabletopImpl.cpp
+  ObjXImpl.cpp
+  ObjOImpl.cpp
+  Создание кода...
+ObjectsImpl.obj : error LNK2001: неразрешенный внешний символ "public: virtual char const * __cdecl Objects::getClass(void)const " (?getClass@Objects@@UEBAPEBDXZ).
+ObjectsImpl.obj : error LNK2001: неразрешенный внешний символ "public: virtual void __cdecl Objects::setPosX(short)" (?setPosX@Objects@@UEAAXF@Z).
+ObjectsImpl.obj : error LNK2001: неразрешенный внешний символ "public: virtual void __cdecl Objects::setPosY(short)" (?setPosY@Objects@@UEAAXF@Z).
+ObjectsImpl.obj : error LNK2001: неразрешенный внешний символ "public: virtual void __cdecl Objects::setSelection(bool)" (?setSelection@Objects@@UEAAX_N@Z).
+C:\Users\merzlikin.ai1667\Source\Repos\StrvngeMan21\lr.Tic-Tac-Toe\x64\Debug\lr.Tic+Tac+Toe.exe : fatal error LNK1120: неразрешенных внешних элементов: 4
