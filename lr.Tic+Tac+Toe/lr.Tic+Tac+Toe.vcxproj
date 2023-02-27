@@ -142,6 +142,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Classes\ControlsIImpl.cpp" />
+    <ClCompile Include="Classes\Objects.cpp" />
     <ClCompile Include="lr.Tic+Tac+Toe.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
@@ -152,12 +153,19 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Classes\ObjXImpl.cpp" />
+    <ClCompile Include="Classes\ObjOImpl.cpp" />
+    <ClCompile Include="Classes\RenderImpl.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Objects.h" />
     <ClInclude Include="Classes\Tabletop.h" />
     <ClInclude Include="Classes\stdafx.h" />
     <ClInclude Include="Classes\Controls.h" />
+    <ClInclude Include="Classes\ObjX.h" />
+    <ClInclude Include="Classes\ObjO.h" />
+    <ClInclude Include="Classes\Render.h" />
+    <ClInclude Include="Classes\Debug.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
