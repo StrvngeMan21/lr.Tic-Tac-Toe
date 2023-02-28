@@ -21,7 +21,6 @@ public:
 	short getPosY() const;
 	char getObjChar() const;
 	bool getSelection() const;
-	virtual const char* getClass() const;
 
 	virtual void setPosX(short x);
 	virtual void setPosY(short y);

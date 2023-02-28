@@ -20,6 +20,7 @@ private:
 
 	static std::array<std::array<std::shared_ptr<Objects>, m_xSize>, m_xSize> m_table;
 
+	static void eraseAndFillTable();
 	static void getTurn();
 	static void setObjRandomly();
 

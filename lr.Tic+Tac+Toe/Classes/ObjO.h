@@ -13,6 +13,5 @@ public:
     ObjO();
     ObjO(short x, short y);
     virtual ~ObjO();
-
 };
 

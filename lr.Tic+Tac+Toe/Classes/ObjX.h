@@ -5,7 +5,7 @@ class ObjX :
     public Objects
 {
 private:
-    char m_objChar = 'O';
+    char m_objChar = 'X';
 
     class Impl;
     std::unique_ptr<Impl> d_;
